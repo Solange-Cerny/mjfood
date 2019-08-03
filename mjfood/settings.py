@@ -25,7 +25,7 @@ SECRET_KEY = '267b122c-e3d5-4518-93c2-f7f6601d4c12'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','django-test-project.azurewebsites.net']
+ALLOWED_HOSTS = ['127.0.0.1','mjfood.azurewebsites.net']
 
 # Application references
 # https://docs.djangoproject.com/en/2.1/ref/settings/#std:setting-INSTALLED_APPS
