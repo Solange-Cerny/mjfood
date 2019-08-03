@@ -15,8 +15,10 @@ from django.conf.urls import url
 
 urlpatterns = [
     path('', views.home, name='home'),
-    path('contact/', views.contact, name='contact'),
-    path('about/', views.about, name='about'),
+    path('home/', views.home, name='home'),
+    path('products/', views.products, name='products'),
+    path('gallery/', views.gallery, name='gallery'),
+    path('contactus/', views.contactus, name='contactus'),
     path('login/',
          LoginView.as_view
          (

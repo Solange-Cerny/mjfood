@@ -18,12 +18,12 @@ def home(request):
         }
     )
 
-def contact(request):
+def contactus(request):
     """Renders the contact page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/contact.html',
+        'app/contactus.html',
         {
             'title':'Contact',
             'message':'Your contact page.',
@@ -31,14 +31,28 @@ def contact(request):
         }
     )
 
-def about(request):
+def gallery(request):
     """Renders the about page."""
     assert isinstance(request, HttpRequest)
     return render(
         request,
-        'app/about.html',
+        'app/gallery.html',
         {
-            'title':'About',
+            'title':'Gallery',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )
+
+
+def products(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/products.html',
+        {
+            'title':'Products',
             'message':'Your application description page.',
             'year':datetime.now().year,
         }
