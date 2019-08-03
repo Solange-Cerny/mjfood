@@ -43,3 +43,17 @@ def about(request):
             'year':datetime.now().year,
         }
     )
+
+
+def gallery(request):
+    """Renders the about page."""
+    assert isinstance(request, HttpRequest)
+    return render(
+        request,
+        'app/gallery.html',
+        {
+            'title':'Gallery',
+            'message':'Your application description page.',
+            'year':datetime.now().year,
+        }
+    )

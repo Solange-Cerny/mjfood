@@ -1,0 +1,14 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<main>
+    <div id='container' class='container-gallery'>
+      <div id='loader'>
+          {% load staticfiles %}
+          <img class='loader-img' src='{% static "app/images/loading.gif" %}' alt='Loading progress'>
+      </div>
+    </div>
+  </main>
+
+{% endblock %}
