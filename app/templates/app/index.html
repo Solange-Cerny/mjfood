@@ -2,60 +2,32 @@
 
 {% block content %}
 
-<main>
-      <div class='container-home'>
-          <div class='ref-index' id='reference-1'>
-            <img src='/static/images/sig_martin.png' alt='MARTIN signature'> 
-            <h3>MARTIN PETERSON</h3>
-            <p>A great and lasting meeting, congratulations for the exquisite skill with which you have interpreted me.</p>
-          </div>
-          <div class='ref-index' id='reference-2'>
-              <img src='/static/images/sig_eugen.png' alt='EUGEN signature'> 
-              <h3>EUGEN MONTANA</h3>
-              <p>If you want to stand out from the other clothing! Enjoy!</p>
-            </div>
-          <div class='ref-index' id='reference-3'>
-              <img src='/static/images/sig_jack.png' alt='JACK signature'> 
-              <h3>JACK BARNHART</h3>
-              <p>When there is a whim, there is no loss!</p>
-          </div> 
-          <div class='ref-index' id='reference-4'>
-              <img src='/static/images/sig_calvin.png' alt='CALVIN signature'> 
-              <h3>CALVIN KEYS</h3>
-              <p>A thousand thousand thanks for the most perfect clothes in the world.</p>
-        </div>
+<div class="jumbotron">
+    <h1>Django</h1>
+    <p class="lead">Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <p><a href="https://www.djangoproject.com/" class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
 
-        <img id='main-img' class='img-index' src='/static/images/052.jpg' alt='Main image'>
-        <img id='small-img-1' class='img-index' src='/static/images/mainImg_01.jpg' alt='Small image 1'>
-        <img id='small-img-2' class='img-index' src='/static/images/mainImg_02.jpg' alt='Small image 2'>
-        <img id='small-img-3' class='img-index' src='/static/images/mainImg_03.jpg' alt='Small image 3'> 
-      </div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Django gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="https://djangobook.com/django-tutorials/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft Azure</h2>
+        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
+        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+    </div>
+</div>
 
-    </main>
-
-    <footer>
-      <div class='container-footer'>
-        <div id='footer-col-1'>
-          <ul>
-            <li>&nbsp;</li>
-          </ul>
-        </div>
-        <div id='footer-col-2'>
-          <ul>
-            <li>GDPR compliant</li>
-            <li>&nbsp;</li>
-            <li>All rights reserved</li>
-          </ul>
-        </div>
-        <div id='footer-col-3'>
-          <ul>
-            <li>&nbsp;</li>
-            <li>&nbsp;</li>
-            <li>&copy; Solaro {{ year }}</li>
-          </ul>
-        </div>
-      </div>
-    </footer>
-
-    {% endblock %}
-    
+{% endblock %}
