@@ -13,6 +13,9 @@ from app.models import LogMessage
 
 from django.views.generic import ListView
 
+from django import db
+
+
 '''
 def home(request):
     """Renders the home page."""
@@ -74,6 +77,7 @@ def log_message(request):
 
     if request.method == "POST":
         if form.is_valid():
+            db.connections.close_all()
             message = form.save(commit=False)
             message.log_date = datetime.now()
             message.save()
