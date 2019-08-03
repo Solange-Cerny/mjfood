@@ -2,6 +2,9 @@
 
 {% block content %}
 
+
+
+
 <div class="jumbotron">
     <h1>Django</h1>
     <p class="lead">Django is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
@@ -29,5 +32,34 @@
         <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
     </div>
 </div>
+
+
+<h2>Logged messages</h2>
+
+{% if message_list %}
+    <table  class="table table-striped table-hover">
+        <thead>
+        <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Message</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for message in message_list %}
+            <tr>
+                <td>{{ message.log_date | date:'d M Y' }}</td>
+                <td>{{ message.log_date | time:'H:i:s' }}</td>
+                <td>
+                    {{ message.message }}
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% else %}
+    <p>No messages have been logged. Use the <a href="{% url 'log' %}">Log Message form</a>.</p>
+{% endif %}
+
 
 {% endblock %}
