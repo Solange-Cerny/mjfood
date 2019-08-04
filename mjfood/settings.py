@@ -101,7 +101,7 @@ DATABASES = {
         'PASSWORD': 'xxx',
         'AUTOCOMMIT': 'True',
         'OPTIONS': {
-            'driver': '/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.0.so.1.1',
+            'driver': '/usr/local/lib/libmsodbcsql.13.dylib',
         },
     }
 
