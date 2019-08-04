@@ -79,15 +79,31 @@ DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
         'NAME': 'solarodb',
-        'HOST': 'solarodb.database.windows.net',
-        'PORT': '',
         'USER': 'xxx@solarodb.database.windows.net',
-        'PASSWORD': 'xxx',
-        'AUTOCOMMIT': 'True',
-        'OPTIONS': {
-            'driver': 'ODBC Driver 13 for SQL Server',
-        },
+        'PASSWORD': 'password',
+        'HOST': 'solarodb.database.windows.net',
+        'PORT': '1433',
+        'OPTIONS' : {
+            'AUTOCOMMIT': True,
+            'host_is_server': True,
+            'unicode_results': True,
+            'driver': 'FreeTDS',
+            'extra_params' : 'TDS_VERSION=8.0',
+            }
     }
+
+    # 'default': {
+    #     'ENGINE': 'sql_server.pyodbc',
+    #     'NAME': 'solarodb',
+    #     'HOST': 'solarodb.database.windows.net',
+    #     'PORT': '',
+    #     'USER': 'xxx@solarodb.database.windows.net',
+    #     'PASSWORD': 'xxx',
+    #     'AUTOCOMMIT': 'True',
+    #     'OPTIONS': {
+    #         'driver': 'ODBC Driver 13 for SQL Server',
+    #     },
+    # }
 
     #'default': {
     #    'ENGINE': 'django.db.backends.sqlite3',
