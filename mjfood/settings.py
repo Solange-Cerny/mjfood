@@ -101,7 +101,7 @@ DATABASES = {
         'PASSWORD': 'xxx',
         'AUTOCOMMIT': 'True',
         'OPTIONS': {
-            'driver': '/usr/local/lib/libmsodbcsql.13.dylib',
+            'driver': 'ODBC Driver 17 for SQL Server',
         },
     }
 
