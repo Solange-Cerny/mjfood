@@ -81,9 +81,12 @@ DATABASES = {
         'NAME': 'solarodb',
         'HOST': 'solarodb.database.windows.net',
         'PORT': '',
-        'USER': 'Solange-Cerny@solarodb.database.windows.net',
-        'PASSWORD': 'xxxx',
+        'USER': 'xxx@solarodb.database.windows.net',
+        'PASSWORD': 'xxx',
         'AUTOCOMMIT': 'True',
+        'OPTIONS': {
+            'driver': 'ODBC Driver 13 for SQL Server',
+        },
     }
 
     #'default': {
