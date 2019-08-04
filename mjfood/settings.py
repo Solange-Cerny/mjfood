@@ -76,34 +76,34 @@ WSGI_APPLICATION = 'mjfood.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
-    'default': {
-        'ENGINE': 'sql_server.pyodbc',
-        'NAME': 'solarodb',
-        'USER': 'xxx@solarodb.database.windows.net',
-        'PASSWORD': 'password',
-        'HOST': 'solarodb.database.windows.net',
-        'PORT': '1433',
-        'OPTIONS' : {
-            'AUTOCOMMIT': True,
-            'host_is_server': True,
-            'unicode_results': True,
-            'driver': 'FreeTDS',
-            'extra_params' : 'TDS_VERSION=8.0',
-            }
-    }
-
     # 'default': {
     #     'ENGINE': 'sql_server.pyodbc',
     #     'NAME': 'solarodb',
-    #     'HOST': 'solarodb.database.windows.net',
-    #     'PORT': '',
     #     'USER': 'xxx@solarodb.database.windows.net',
-    #     'PASSWORD': 'xxx',
-    #     'AUTOCOMMIT': 'True',
-    #     'OPTIONS': {
-    #         'driver': 'ODBC Driver 13 for SQL Server',
-    #     },
+    #     'PASSWORD': 'password',
+    #     'HOST': 'solarodb.database.windows.net',
+    #     'PORT': '1433',
+    #     'OPTIONS' : {
+    #         'AUTOCOMMIT': True,
+    #         'host_is_server': True,
+    #         'unicode_results': True,
+    #         'driver': 'FreeTDS',
+    #         'extra_params' : 'TDS_VERSION=8.0',
+    #         }
     # }
+
+    'default': {
+        'ENGINE': 'sql_server.pyodbc',
+        'NAME': 'solarodb',
+        'HOST': 'solarodb.database.windows.net',
+        'PORT': '',
+        'USER': 'xxx@solarodb.database.windows.net',
+        'PASSWORD': 'xxx',
+        'AUTOCOMMIT': 'True',
+        'OPTIONS': {
+            'driver': '/opt/microsoft/msodbcsql17/lib64/libmsodbcsql-17.0.so.1.1',
+        },
+    }
 
     #'default': {
     #    'ENGINE': 'django.db.backends.sqlite3',
