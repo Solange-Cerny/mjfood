@@ -44,4 +44,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r'^app/static/(?P<path>.*)$', serve,{'document_root': settings.STATIC_ROOT}),
     path("log/", views.log_message, name="log"), 
+    # This path is included by default when creating the app
+    path("admin/", admin.site.urls),
 ]
